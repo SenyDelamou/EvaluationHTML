@@ -297,6 +297,21 @@ body {
     text-align: right;
 }
 
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 12px;
+    box-shadow: var(--shadow-light);
+    background: var(--color-surface);
+}
+
+.table-responsive table {
+    min-width: 720px;
+    box-shadow: none;
+    margin: 0;
+    border-radius: 0;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -379,5 +394,75 @@ tr:hover {
     .field-grid,
     .field-grid.compact {
         grid-template-columns: 1fr;
+    }
+
+    .table-responsive table {
+        min-width: 620px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        padding: 40px 30px;
+    }
+
+    .content {
+        padding: 40px 30px;
+    }
+
+    .form-grid {
+        padding: 30px;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 575px) {
+    body {
+        padding: 24px 14px;
+    }
+
+    .container {
+        border-radius: 16px;
+    }
+
+    .header {
+        padding: 28px 18px;
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .info-bar {
+        padding: 22px 18px;
+    }
+
+    .content {
+        padding: 26px 18px;
+    }
+
+    .form-grid {
+        padding: 22px;
+        gap: 18px;
+    }
+
+    .form-section {
+        padding: 18px 20px;
+    }
+
+    .form-group input,
+    .form-group select {
+        padding: 12px 14px;
+    }
+
+    table,
+    .table-responsive table {
+        min-width: 580px;
+        font-size: 0.9rem;
+    }
+
+    th,
+    td {
+        padding: 14px 16px;
     }
 }

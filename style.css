@@ -207,6 +207,7 @@ body {
     color: var(--color-muted);
     background: var(--color-surface);
     transition: all 0.3s ease;
+    width: 100%;
 }
 
 .form-group input::placeholder {
@@ -250,6 +251,7 @@ body {
     gap: 25px;
     flex-wrap: wrap;
     margin-top: 5px;
+    width: 100%;
 }
 
 .radio-label {

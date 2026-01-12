@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Évaluation Finale - HTML5 & CSS3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="info-bar">
+            <div class="info-item">
+                <strong>ANNÉE ACADÉMIQUE</strong>
+                2025-2026
+            </div>
+            <div class="info-item">
+                <strong>DURÉE</strong>
+                2h00mn
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- Formulaire de saisie -->
+            <div class="form-container">
+                <div class="form-header">Formulaire de déclaration d'absence</div>
+                
+                <div class="form-grid">
+                    <section class="form-section span-2">
+                        <h3 class="section-label">Informations personnelles</h3>
+                        <div class="field-grid">
+                            <div class="form-group">
+                                <label>Matricule</label>
+                                <input type="text" placeholder="Matricule">
+                            </div>
+                            <div class="form-group">
+                                <label>Nom</label>
+                                <input type="text" placeholder="Nom">
+                            </div>
+                            <div class="form-group">
+                                <label>Prénom</label>
+                                <input type="text" placeholder="Prénom">
+                            </div>
+                            <div class="form-group full-span">
+                                <label>Email</label>
+                                <input type="email" placeholder="Email institutionnel">
+                            </div>
+                            <div class="form-group full-span">
+                                <label>Genre</label>
+                                <div class="radio-group">
+                                    <label class="radio-label">
+                                        <input type="radio" name="genre" value="masculin"> Masculin
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="genre" value="feminin"> Féminin
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="form-section">
+                        <h3 class="section-label">Parcours académique</h3>
+                        <div class="field-grid">
+                            <div class="form-group full-span">
+                                <label>Département</label>
+                                <select>
+                                    <option value="" selected disabled>Choisir un département</option>
+                                    <option value="informatique">Informatique</option>
+                                    <option value="mathematiques">Mathématiques</option>
+                                    <option value="physique">Physique</option>
+                                    <option value="biologie">Biologie Appliquée</option>
+                                    <option value="miage">MIAGE</option>
+                                    <option value="sociologie">Sociologie</option>
+                                    <option value="lettres">Lettres Modernes</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Code</label>
+                                <input type="text" placeholder="Code filière">
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="form-section">
+                        <h3 class="section-label">Planification du contrôle</h3>
+                        <div class="field-grid compact">
+                            <div class="form-group">
+                                <label>Date Contrôle</label>
+                                <input type="date">
+                            </div>
+                            <div class="form-group">
+                                <label>Heure Contrôle</label>
+                                <input type="time">
+                            </div>
+                            <div class="form-group full-span">
+                                <label>Choix de contrôle</label>
+                                <select>
+                                    <option value="present">Présent</option>
+                                    <option value="absent">Absent</option>
+                                </select>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="form-footer">
+                    <button class="btn-submit">Enregistrer</button>
+                </div>
+            </div>
+
+            <!-- Tableau des absences -->
+            <h2 class="section-title">Tableau de suivi des absences (5 enregistrements demandés)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>N°</th>
+                        <th>Matricule</th>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                        <th>Département</th>
+                        <th>Date Contrôle</th>
+                        <th>Heure Contrôle</th>
+                        <th>Choix de contrôle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>INF2025-001</td>
+                        <td>Diallo</td>
+                        <td>Aminata</td>
+                        <td>Informatique</td>
+                        <td>2025-11-04</td>
+                        <td>10:00</td>
+                        <td>Absent</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Sam2025-014</td>
+                        <td>DELAMOU</td>
+                        <td>Samaké</td>
+                        <td>Informatique</td>
+                        <td>2025-11-05</td>
+                        <td>08:30</td>
+                        <td>Présent</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>PHY2025-007</td>
+                        <td>Bah</td>
+                        <td>Fatoumata</td>
+                        <td>Physique</td>
+                        <td>2025-11-05</td>
+                        <td>12:15</td>
+                        <td>Absent</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>BIO2025-022</td>
+                        <td>Sow</td>
+                        <td>Mamadou</td>
+                        <td>Biologie Appliquée</td>
+                        <td>2025-11-06</td>
+                        <td>09:45</td>
+                        <td>Présent</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>MJG2025-010</td>
+                        <td>Traoré</td>
+                        <td>Kadiatou</td>
+                        <td>MIAGE</td>
+                        <td>2025-11-06</td>
+                        <td>15:30</td>
+                        <td>Absent</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            
+        </div>
+
+       
+    </div>
+
+</body>
+</html>
